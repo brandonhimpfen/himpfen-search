@@ -1,58 +1,94 @@
 # Himpfen Search
 
-**Himpfen Search** is a conceptual search interface designed for the era of AI-assisted information discovery.
+**A search workspace designed for the AI era.**
 
-The project explores how modern search engines might evolve beyond the traditional “ten blue links” layout by integrating three distinct layers of information:
+Himpfen Search is a conceptual interface that explores how search engines might evolve as artificial intelligence becomes a central layer of information discovery.
 
-1. **Search History / Sessions**
-2. **AI Understanding**
-3. **Sources & Services**
+Instead of presenting results as a single vertical stream, the interface separates search into three distinct but connected layers:
 
-Instead of presenting results as a single vertical list, the interface separates these functions into a workspace-style layout designed to support exploration, verification, and action.
+- History: persistent search sessions and research paths.
+- AI Understanding: synthesized explanations and contextual insights.
+- Sources & Services: traditional web results, businesses, and actions.
 
-## Concept
+The goal is not to replace the open web, but to clarify the roles of AI, sources, and services within the search experience.
 
-Traditional search interfaces were designed when search engines primarily retrieved and ranked documents.
+# Preview
 
-AI systems now make it possible to:
+Add a screenshot of the interface here once available.
 
-- interpret queries
-- synthesize information across multiple sources
-- explain concepts directly
-- assist with follow‑up questions
+![Himpfen Search Interface](images/preview.png)
 
-However, users still need **access to the underlying web**, both for verification and deeper exploration.
+A three-panel interface that separates AI understanding from traditional sources and services.
 
-Himpfen Search proposes an interface that keeps both capabilities visible and distinct.
+# The Problem
 
-## Interface Model
+The traditional search interface was designed when search engines primarily retrieved documents.
 
-The interface is organized into three columns.
+The typical workflow looked like this:
 
-### 1. History (Left Column)
+- Enter a query
+- Scan a list of links
+- Open multiple pages
+- Construct an understanding manually
 
-Tracks the user’s search sessions and previous queries.
+Modern search systems now perform much more complex tasks:
+
+- interpreting user intent
+- synthesizing information across sources
+- generating summaries and explanations
+- supporting iterative exploration
+
+Despite these capabilities, the search interface still largely reflects the “ten blue links” model.
+
+As a result, today's search pages mix several different functions within a single vertical stream:
+
+- explanations
+- sources
+- advertisements
+- maps
+- services
+- knowledge panels
+
+This can blur the user's workflow.
+
+In practice, users search for three different reasons:
+
+- Understanding: learning about a topic
+- Discovery: finding sources and research
+- Action: booking, purchasing, or contacting services
+
+Traditional interfaces combine these functions into one feed.
+
+Himpfen Search proposes separating them.
+
+# The Interface Model
+
+Himpfen Search organizes the search experience into three columns.
+
+- History (left column)
+
+Tracks search sessions and previous queries.
 
 Purpose:
 
-- enable iterative exploration
 - revisit earlier research paths
-- maintain context during multi‑step searches
+- maintain context across multiple searches
+- move between related questions
 
-This behavior mirrors how users interact with conversational AI systems.
+Search increasingly behaves like a research session rather than a single query. Persistent history supports that behavior.
 
-### 2. AI Understanding Layer (Middle Column)
+- AI Understanding (center column)
 
-This column provides:
+This panel provides:
 
-- AI-generated summaries
-- contextual explanations
-- synthesized insights
-- follow-up interactions
+- synthesized explanations
+- contextual summaries
+- structured insights
+- follow-up prompts
 
-Rather than replacing sources, the AI layer acts as a **guide that helps users understand the topic before exploring deeper**.
+Instead of replacing sources, this layer acts as an interpretive guide that helps users understand the topic before exploring deeper.
 
-### 3. Sources & Services (Right Column)
+- Sources & Services (right column)
 
 This column preserves the traditional role of search engines:
 
@@ -60,62 +96,91 @@ This column preserves the traditional role of search engines:
 - business listings
 - maps
 - travel services
-- shopping results
 - advertisements
+- commercial tools
 
-Separating this panel ensures the open web remains visible and accessible.
+Separating this column ensures the open web remains visible and accessible.
 
-## Why This Model
+Users can easily verify information or explore sources beyond the AI explanation.
 
-Modern search now serves three different purposes:
+# Why This Model Matters
 
-| Function | Role |
-|--------|------|
-| Understanding | AI summaries and explanations |
-| Discovery | links to sources and research |
-| Action | services such as booking, shopping, and local businesses |
+Modern search increasingly involves three parallel systems:
 
-Traditional search interfaces combine these into a single vertical stream.
+- AI models: interpret and synthesize information
+- web search: discover documents and sources
+- service platforms: enable transactions and actions
 
-Himpfen Search separates them into distinct panels to improve clarity and usability.
+Traditional search interfaces compress these systems into a single list.
 
----
+Himpfen Search separates them into distinct panels to improve:
 
-## Prototype
+- clarity
+- transparency
+- usability
 
-This repository includes a static UI prototype demonstrating the concept.
+The result is a search workspace rather than a single results page.
 
-The demo uses a travel-related query example but the interface is intended to represent a **general-purpose search design**.
+# Design Principles
 
-Files:
+The concept follows several guiding principles:
 
-```
-demo/
-  index.html
-  styles.css
-  script.js
-```
+- Transparency: AI explanations remain visibly connected to their sources
+- Coexistence: AI summaries and traditional web results complement each other
+- Exploration: search supports iterative thinking and multi-step research
+- Action: commercial services remain accessible without overwhelming informational content
+
+# Prototype
+
+This repository contains a static UI prototype demonstrating the concept.
+
+The demo currently uses a travel-related query example, but the interface represents a general search model.
+
+Repository files:
+
+- `demo/index.html`
+- `demo/styles.css`
+- `demo/script.js`
 
 Open `index.html` in a browser to explore the interface.
 
----
+# Live Demo
 
-## Status
+`https://brandonhimpfen.github.io/himpfen-search/demo/`
 
-This project is a **design concept and prototype**, not a production search engine.
+# Repository Structure
 
-It exists to illustrate a potential direction for search interface design in the age of AI.
+```text
+himpfen-search/
+├── demo/
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+├── images/
+│   └── preview.png
+├── README.md
+└── LICENSE
+```
 
----
+# Status
 
-## Author
+Himpfen Search is a design concept and interface exploration.
 
-Brandon Himpfen
+It is not intended to be a production search engine.
 
-Personal site: https://www.himpfen.com
+The project illustrates a potential direction for search interface design in the age of AI.
 
----
+# Discussion
 
-## License
+This project is a design exploration.
+
+Feedback, critiques, and alternative interface ideas are welcome.
+
+# Author
+
+Brandon Himpfen  
+`https://www.himpfen.com`
+
+# License
 
 MIT License
